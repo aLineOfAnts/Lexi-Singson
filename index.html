@@ -272,13 +272,14 @@
                 <h1 style="text-align: center; font-size: 50px; padding-top: 60px;">SEND ME SOMETHING!</h1>
                 <canvas class="Post-Office-Canvas" width="800" height="500"></canvas>
                 <div class="Post-Office-Canvas-Tools-Panel">
-                    <img src>
-                    <img src>
-                    <img src>
-                    <input type="color">
-                    <input type="range">
-                    <img src>
-                    <button>Submit</button>
+                    <img src="Assets/UI/Post-Office/Drawing-Board/Icon.svg" class="Post-Office-Canvas-Tool-Button Post-Office-Canvas-Tool-Control Squish-Effect" onclick="changeTool(0)">
+                    <img src="Assets/UI/Post-Office/Drawing-Board/eraser-svgrepo-com 1.svg" class="Post-Office-Canvas-Tool-Button Post-Office-Canvas-Tool-Control Squish-Effect" onclick="changeTool(1)">
+                    <img src="Assets/UI/Post-Office/Drawing-Board/Vector (5).svg" class="Post-Office-Canvas-Tool-Button Post-Office-Canvas-Tool-Control Squish-Effect" onclick="changeTool(2)">
+                    <input type="color" class="Post-Office-Canvas-Tool-Button Post-Office-Canvas-Tool-Control Squish-Effect" value="#000000" oninput="changeColor(value)">
+                    <input type="range" min="0" max="40" value="10" class="Post-Office-Canvas-Tool-Control" oninput="changeWidth(value)">
+                    <p id="Drawing-Size-Label" class="Post-Office-Canvas-Tool-Control" style="width: 10 px; text-align: left;">20 px;</p>
+                     <img src="Assets/UI/Post-Office/Drawing-Board/Trash 2.svg" id="trash" class="Post-Office-Canvas-Tool-Button Post-Office-Canvas-Tool-Control Squish-Effect">
+                    <button class="Squish-Effect"><img src="Assets/UI/Post-Office/Drawing-Board/Send.svg" class="Post-Office-Canvas-Tool-Button">Submit</button>
                 </div>
             </div>
 
@@ -289,7 +290,7 @@
         <div class="Footer-Container">
             <div class="Footer-Wrapper">
                 <div class="Footer-Column-1">
-                    <img src="Assets/UI/logo-art.PNG" class="Footer-Art">
+                    <img src="Assets/UI/logo-art.PNG" class="Footer-Art Squish-Effect">
                     <div class="Footer-Column-1-Text">
                         <h1 style="font-size: 60px;" class="Footer-Logo-Label">Lexi Singson</h1>
                         <h style="font-size: 24px;" class="Footer-Socials-La">LexiSingsonAtWork@gmail.com</h3>
@@ -314,7 +315,7 @@
                 
         </div>
         <!--Footer End-->
-        
+        <script src="drawing.js"></script>
     </body>
 
 </html>
