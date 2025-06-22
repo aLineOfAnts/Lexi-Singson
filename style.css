@@ -164,10 +164,37 @@
             margin: auto;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr, 1fr;
             padding: 0px;
             width: 70%;
             height: 50%;
             gap: 10px;
+        }
+
+        .About-Me-Languages-Slot-Container {
+            display: flex;
+            position: relative;
+            background-image: url("Assets/UI/About-Me/Slot.png");
+            background-size: contain;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            width: 100%;
+            aspect-ratio: 1/1;
+            align-content: center;
+            align-items: center;
+            align-self: center;
+          
+        }
+
+        .skill {
+            position: relative;
+            display: inline-block;
+            width: 80%;
+       
+            margin: auto auto;
+            align-content: center;
+            align-items: center;
+            align-self: center;
         }
 
         .About-Me-Languages-Slots-Wrapper {

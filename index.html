@@ -31,7 +31,7 @@
                     </div>
                     
                     <h2 class="Home-Description">Artist & Programmer</h2>
-                    <img src="Assets/UI/door.png" class="Home-Door">
+                    <img src="Assets/UI/door.png" class="Home-Door" direct="About-Me" onclick="NavButton(this)">
                 </div>
                 <div class="Home-Container-Column-2">
                     <img src="Assets/UI/home-art.png" class="Home-Art">
@@ -42,7 +42,7 @@
         <!--Home End-->
 
         <!--About Me Start-->
-        <section id="About-Me" class="hidden">
+        <section id="About-Me">
             <div class="About-Me-Profile">
                 <div class="About-Me-Profile-Background">
                     <img src="Assets/UI/About-Me/Profile Background.png" width="100%" style="margin-top: -30px;" >
@@ -55,10 +55,13 @@
                     </div>
                     <div class="About-Me-Profile-Column-2">
                         <div style="display: flex;">
-                             <img src="Assets/UI/About-Me/Greeting.svg" style="width: 90px; margin-top: -13px; margin-right: 10px;"><p>My name is Lexi! I am an upcoming</p>
+                             <img src="Assets/UI/About-Me/Greeting.svg" style="width: 90px; margin-top: -13px; margin-right: 10px;"><p>Hello! My name is Lexi and I am an upcoming Computer Science</p>
                         </div>
-                        <p>Science student specializing in Software Engineering! I like to make things, like draw and code. I also take an interest in tabletop RPGs. I like to walk outdoors and eat sweets. and etc etc blah blah omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-                            omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptatesdebitis.</p>
+                        <p>Student specializing in Software Engineering! I am both a programmer and an artist from Manila, 
+                            I like to make things and I have always been heavily drawn towards art and visuals. 
+                            Aside from that I take interest in Tabletop RPGs, CRPGs and I like to pace around either indoors or outdoors. 
+                            I really like learning stuff, I believe knowledge is power so I take enthusiasm in learning new stuff everyday. 
+                            I also really like listening to musicals and podcasts sometimes.</p>
                     </div>
                 </div>
 
@@ -71,31 +74,41 @@
                    <div class="About-Me-Languages-Slots-Wrapper">
                         <div class="About-Me-Languages-Slots">
                             <div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                                <!--<img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">!-->
+
+                                <img src="" id="skills-0" class="skill">
                             </div>
                             <div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                                
+                                <img src="" id="skills-1" class="skill">
                             </div><div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                    
+                                <img src="" id="skills-2" class="skill">
                             </div><div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                                
+                                <img src="" id="skills-3" class="skill">
                             </div><div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                                
+                                <img src="" id="skills-4" class="skill">
                             </div>
                             <div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                                
+                                <img src="" id="skills-5" class="skill">
                             </div>
                             <div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                               
+                                <img src="" id="skills-6" class="skill">
                             </div>
                             <div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                              
+                                <img src="" id="skills-7" class="skill">
                             </div>
                             <div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                              
+                                <img src="" id="skills-8" class="skill">
                             </div>
                             <div class="About-Me-Languages-Slot-Container">
-                                <img src="Assets/UI/About-Me/Slot.png" class="About-Me-Languages-Slot">
+                                <img src="" id="skills-9" class="skill">
                             </div>
                         </div>
                    </div>
@@ -234,7 +247,7 @@
         <!--Artworks End-->
 
         <!--Post Office Start-->
-        <section id="Post-Office">
+        <section id="Post-Office" class="hidden">
             <div class="Post-Office-Information-Container">
                 <div class="Post-Office-Information-Wrapper">
                     <div class="Post-Office-Description">
@@ -315,7 +328,7 @@
                 
         </div>
         <!--Footer End-->
-        <script src="drawing.js"></script>
+        <!--<script src="drawing.js"></script>!-->
     </body>
 
 </html>

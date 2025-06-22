@@ -37,11 +37,11 @@ window.onload = function() {
             ctx.moveTo(e.offsetX, e.offsetY);
             ctx.stroke()
         } else if (tool == tools[2]) {
-            const data = ctx.createImageData(innerWidth, innerHeight);
             const origin = ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data
             ctx.fillStyle = "red";
             ctx.fillRect(e.offsetX, e.offsetY, 1, 1);
-            spread(e.offsetX, e.offsetY, origin);
+            fill2(e.offsetX, e.offsetY, origin);
+            
         }
     });
 
@@ -62,11 +62,60 @@ window.onload = function() {
                     return;
                 }
                 ctx.fillRect(neighbors[i][0], neighbors[i][1], 1, 1);
+                
                 spread(neighbors[i][0], neighbors[i][1], origin);
+                return;
             }
         }
     }
 
+    function fill(x, y, origin) {
+        
+        const pixel = ctx.getImageData(x, y, 1, 1).data;
+
+        if (x < 0 || x > canvas.innerHeight || y < 0 || y > canvas.innerHeight) {
+            return;
+        }
+        console.log(JSON.stringify(origin), JSON.stringify(origin))
+        if (JSON.stringify(origin) !== JSON.stringify(pixel)) {
+            console.log("they're the same officer")
+        }
+
+        ctx.fillRect(x, y, 1, 1);
+
+        
+        fill(x, y+1, origin);
+        fill(x-1, y, origin);
+        fill(x, y-1, origin);
+        fill(x+1, y, origin);
+        fill(x+1, y+1, origin);
+        fill(x-1, y-1, origin);
+    }
+
+    function fill2(x, y, origin, color) {
+        var pixels = [[x+1, y], [x, y+1], [x-1, y], [x, y-1]]
+
+        while (pixels.length > 0) {
+            var coord = pixels.at(-1);
+            const pixel = ctx.getImageData(coord[0], coord[1], 1, 1).data;
+            console.log("pixel", pixel);
+            console.log("pixel", origin);
+            pixels.pop();
+        
+            if (coord[0] > 0 && coord[0] < canvas.width && coord[1] > 0 && coord[1] < canvas.height ) {
+                if (JSON.stringify(pixel) === JSON.stringify(origin)) {
+                    ctx.fillRect(pixel[0], pixel[1], 1, 1);
+
+                    /*pixels.push([pixel[0]+1, pixel[1]])
+                    pixels.push([pixel[0], pixel[1]+1])
+                    pixels.push([pixel[0]-1, pixel[1]])
+                    pixels.push([pixel[0], pixel[1]-1])
+                    console.log("WORK");*/
+                    console.log(pixel);
+                }
+            }
+        }
+    }
     canvas.addEventListener('mousemove', (e) => {
         draw(e)
     });
