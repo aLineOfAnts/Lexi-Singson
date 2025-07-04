@@ -7,12 +7,12 @@ export default function Home() {
   return (
     <div className="home-container">
       <div>
-        <h1>Lexi Singson</h1>
+        <h1 className="home-logo">Lexi <br></br> Singson</h1>
         <h2>Artist & Programmer</h2>
         <Link href="/about-me"><img src="/ui/closed-door.PNG"></img></Link>
       </div>
       <div>
-        <img src="/ui/home-art.PNG" className="home-background-art"></img>
+        <img src="/ui/Group 10.PNG" className="home-background-art"></img>
       </div>
     </div>
   );

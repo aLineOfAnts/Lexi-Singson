@@ -1,27 +1,56 @@
 .home-container {
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
     margin: auto;
     position: relative;
     top: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    
     justify-content: space-between;
    
-    
     align-items: center;
 }
 
+.home-container :nth-child(1) {
+    overflow: visible;
+}
+
 .home-container :nth-child(1) * {
+    display: block;
     text-align: center;
-    background-color: red;
+    margin: auto;
+    color: #69259D;
+    font-weight: normal;
+}
+
+.home-container :nth-child(1) .home-logo {
+    text-align: left;
+    padding: 0px 100px;
+    background: -webkit-linear-gradient(#69259D, #B54A87);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 110;
+    /*line-height: 100px;*/
+}
+
+.home-container :nth-child(1) img {
+    width: 60%;
+}
+
+.home-container :nth-child(2) {
+    overflow-y: hidden;
 }
 
 .home-container :nth-child(2) * {
-    text-align: center;
-    position: absolute;
-    top: 0;
+    
+    
 }
 
+
 .home-background-art {
-    z-index: -3;
+    z-index: -1;
+    height: 100.9vh;
+    float: right;
+    
 }
