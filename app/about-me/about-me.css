@@ -1,0 +1,96 @@
+section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-me-profile {
+    align-content: center;
+    color: #69259D;
+}
+
+.about-me-profile .background {
+    position: absolute;
+    z-index: -3;
+    left: 0;
+    top: -70;
+    width: 100%;
+}
+
+.about-me-profile .portrait, .label {
+    max-width: 400px;
+}
+
+
+.about-me-profile .label {
+    position: absolute;
+    top: -100px;
+    left: -40;
+}
+
+.about-me-profile-wrapper {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.about-me-profile-wrapper > div {
+    position: relative;
+}
+
+.about-me-profile .info {
+    padding-left: 10%;
+}
+
+.ui-decor {
+    position: absolute;
+}
+
+/*Refactor this*/
+
+.about-me-profile .ui-decor-one {
+    position: absolute;
+    bottom: 10;
+    left: 20;
+    max-width: 880px;
+    z-index: -1;
+}
+
+.about-me-profile .ui-decor-two {
+    position: absolute;
+    bottom: 10;
+    right: 20;
+    max-width: 300px;
+}
+
+.skills-container {
+    align-content: center;
+    background-image: url("/ui/About-Me/LanguagesBackground.png");
+}
+
+.skills-wrapper {
+    background-color: red;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+.skills-list {
+    background-color: blue;
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.skills-list-slot {
+    background-color: green;
+    min-width: 200px;
+    min-height: 200px;
+}
