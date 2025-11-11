@@ -1,5 +1,18 @@
 import "./about-me.css"
+import Skill from "../components/about-me/skill"
+const languages = [
 
+    {"name" : "C++", "url" : "ui/About-Me/Languages/c+.png"},
+    {"name" : "C++", "url" : ""},
+    {"name" : "C++", "url" : ""},
+    {"name" : "C++", "url" : ""},
+    {"name" : "C++", "url" : ""},
+    {"name" : "C++", "url" : ""},
+    {"name" : "C++", "url" : ""},
+    {"name" : "C++", "url" : ""},
+    {"name" : "C++", "url" : ""},
+    {"name" : "C++", "url" : ""}
+]
 export default function Languages() {
     return (
         <section className="skills-container">
@@ -8,16 +21,7 @@ export default function Languages() {
                 <img src="ui/About-Me/Languages.png" className="skills-label"></img>
                 <div className="skills-list-wrapper">
                     <div className="skills-list">
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
-                        <div className="skills-list-slot"></div>
+                        {languages.map((skill, index) => { return <Skill name={skill.name} url={skill.url} key={index}></Skill>} )}
                     </div>
                     <div className="skills-list-page-label">
                         <p>1 of 2</p>
