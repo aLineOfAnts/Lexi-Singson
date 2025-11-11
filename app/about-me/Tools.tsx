@@ -13,16 +13,15 @@ const languages = [
     {"name" : "C++", "url" : ""},
     {"name" : "C++", "url" : ""}
 ]
-export default function Languages() {
+export default function Tools() {
     return (
-        <section className="skills-container languages-section">
-            
+        <section className="skills-container">
             <div className="skills-wrapper">
-                <img src="ui/About-Me/Languages.png" className="skills-label"></img>
+                <img src="ui/About-Me/Tools.png" className="skills-label skills-tool-label"></img>
                 <div className="skills-label-wrapper"></div>
                 <div className="skills-list-wrapper">
                     <div className="skills-list">
-                        {languages.map((skill, index) => { return <Skill name={skill.name} url={skill.url} key={index} light={false}></Skill>} )}
+                        {languages.map((skill, index) => { return <Skill name={skill.name} url={skill.url} key={index} light={true}></Skill>} )}
                     </div>
                     <div className="skills-list-page-label">
                         <p>1 of 2</p>

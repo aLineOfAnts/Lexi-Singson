@@ -4,8 +4,9 @@ import "./caption.css"
 interface SkillProps {
     name : string,
     url : string
+    light : boolean
 }
-export default function Skill({name, url} : SkillProps) {
+export default function Skill({name, url, light} : SkillProps) {
     
 
     const ShowCaption = (event : MouseEvent) => {
@@ -35,25 +36,50 @@ export default function Skill({name, url} : SkillProps) {
         }
     }
     
-    return (
-    <>
-        <div className="skills-list-slot">
-            <img src={url} className="skill" 
-            onMouseEnter={(event) => {
-                ShowCaption(event);
-            }}
+    if (light) {
+            return (
+        <>
+            <div className="skills-list-slot skills-slot-light">
+                <img src={url} className="skill" 
+                onMouseEnter={(event) => {
+                    ShowCaption(event);
+                }}
 
-            onMouseLeave={(event) => {
-                HideCaption(event);
-            }}
+                onMouseLeave={(event) => {
+                    HideCaption(event);
+                }}
 
-            onMouseMove={(event) => {
-                MoveCaption(event);
-            }}
-            ></img>
-        </div>
+                onMouseMove={(event) => {
+                    MoveCaption(event);
+                }}
+                ></img>
+            </div>
 
-        <p className="caption hidden" id={"caption-" + name}>{name}</p>
-    </>
-    );
+            <p className="caption hidden" id={"caption-" + name}>{name}</p>
+        </>
+        );
+    } else {
+        return (
+        <>
+            <div className="skills-list-slot skills-slot-dark">
+                <img src={url} className="skill" 
+                onMouseEnter={(event) => {
+                    ShowCaption(event);
+                }}
+
+                onMouseLeave={(event) => {
+                    HideCaption(event);
+                }}
+
+                onMouseMove={(event) => {
+                    MoveCaption(event);
+                }}
+                ></img>
+            </div>
+
+            <p className="caption hidden" id={"caption-" + name}>{name}</p>
+        </>
+        );
+    }
+    
 }

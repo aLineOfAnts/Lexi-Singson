@@ -29,6 +29,7 @@ section {
     left: -40;
 }
 
+
 .about-me-profile-wrapper {
     margin: auto;
     width: 80%;
@@ -51,8 +52,10 @@ section {
 }
 
 .about-me-profile-greeting-label {
+    width: 80px;
     margin-right: 10px;
-    margin-bottom: 8px;
+    margin-top: -10px;
+    float: left;
 }
 
 .about-me-profile .info {
@@ -82,9 +85,12 @@ section {
 
 .skills-container {
     align-content: center;
-    background-image: url("/ui/About-Me/LanguagesBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.languages-section {
+     background-image: url("/ui/About-Me/LanguagesBackground.png");
 }
 
 .skills-wrapper {
@@ -93,7 +99,6 @@ section {
     height: 80%;
     width: 80%;
     margin: auto;
-   
     
     
 }
@@ -124,7 +129,7 @@ section {
 
 .skills-list-slot {
      position: relative;
-    background-image: url("/ui/About-Me/Slot.png");
+   
     background-size: contain;
     background-origin: content-box;
     background-repeat: no-repeat;
@@ -133,7 +138,18 @@ section {
     min-width: 100px;
     aspect-ratio: 1/1;
     align-content: center;
-    
+}
+
+.skills-slot-dark {
+     background-image: url("/ui/About-Me/Slot.png");
+}
+
+.skills-tool-label {
+    float: right;
+}
+
+.skills-slot-light {
+     background-image: url("/ui/About-Me/Slot Light.png");
 }
 
 .skill {
@@ -146,7 +162,7 @@ section {
     cursor: none;
 }
 .skills-label {
-    padding-left: 0;
+    
 }
 
 .skills-list-page-label {
@@ -174,4 +190,13 @@ section {
 button {
     background-color: transparent;
     border: none;
+}
+
+/*Experience*/
+
+.experience-section {
+    background-image: url("/ui/About-Me/Experience/experience_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FBE4B4;
 }
