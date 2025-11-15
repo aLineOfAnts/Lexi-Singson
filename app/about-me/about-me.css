@@ -192,6 +192,22 @@ button {
     border: none;
 }
 
+/* Tools and Skill Wrapper Revamp */
+.skills-content-wrapper {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    align-self: center;
+}
+
+.skills-label-wrapper {
+    height: 30%;
+}
+
+.skills-list-wrapper2 {
+    height: 70%;
+}
+
 /*Experience*/
 
 .experience-section {
