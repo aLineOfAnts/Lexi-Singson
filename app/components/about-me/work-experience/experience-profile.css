@@ -1,0 +1,51 @@
+.experience-section {
+    align-content: center;
+}
+
+.experience-content-wrapper {
+    height: 90%;
+    width: inherit;
+    margin: auto;
+}
+
+.experience-header-wrapper {
+    height: 20%;
+    align-content: center;
+}
+
+.experience-header {
+    width: 800px;
+    margin: auto;
+    display: block;
+    
+}
+
+.experience-profile * {
+    margin: 5 0;
+}
+
+.experience-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 30;
+    height: 200;
+}
+
+.experience-profile h2{
+    font-size: 30;
+    font-weight: bold;
+}
+
+.company {
+    font-weight: 600;
+    margin-top: auto;
+}
+
+li {
+    list-style-type: disc;
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 20;
+}

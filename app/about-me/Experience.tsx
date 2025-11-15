@@ -7,9 +7,7 @@ const experiences = [
         "position" : "Part-Time Mobile Developer",
         "date" : "March 16 - Present",
         "company" : "Lightbear Software",
-        "description" : "-Responsible for designing UI pages of Onboarding Portal. \n -Conceptualized user experience."
-
-
+        "description" : ["Responsible for designing UI pages of Onboarding Portal.", "Conceptualized user experience."]
     }
 ]
 export default function Experience() {
