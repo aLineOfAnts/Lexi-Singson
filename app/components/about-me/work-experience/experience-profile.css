@@ -1,51 +1,31 @@
-.experience-section {
-    align-content: center;
-}
-
-.experience-content-wrapper {
-    height: 90%;
-    width: inherit;
-    margin: auto;
-}
-
-.experience-header-wrapper {
-    height: 20%;
-    align-content: center;
-}
-
-.experience-header {
-    width: 800px;
-    margin: auto;
-    display: block;
-    
-}
-
 .experience-profile * {
     margin: 5 0;
 }
 
+.experience-profile li {
+    font-size: 18px;
+    list-style-type: disc;
+}
+
+.experience-description-list {
+    padding-left: 20px;
+}
 .experience-profile {
     display: flex;
     flex-direction: column;
-    padding: 30;
-    height: 200;
+    
+    height: 180px;
+    
 }
 
 .experience-profile h2{
-    font-size: 30;
+    font-size: 25;
     font-weight: bold;
 }
 
 .company {
     font-weight: 600;
     margin-top: auto;
+    font-size: 20px;
 }
 
-li {
-    list-style-type: disc;
-}
-
-ul {
-    list-style-type: circle;
-    margin-left: 20;
-}

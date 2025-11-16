@@ -210,9 +210,37 @@ button {
 
 /*Experience*/
 
+.experience-item-li::marker {
+    font-size: 1.5em;
+}
 .experience-section {
     background-image: url("/ui/About-Me/Experience/experience_background.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: #FBE4B4;
+    align-content: center;
+}
+
+.experience-content-wrapper {
+    height: 90%;
+    width: inherit;
+    margin: auto;
+}
+
+.experience-header-wrapper {
+    height: 20%;
+    align-content: center;
+}
+
+.experience-header {
+    width: 800px;
+    margin: auto;
+    display: block;
+    
+}
+
+
+.experience-list {
+    width: 85%;
+    margin: auto;
 }

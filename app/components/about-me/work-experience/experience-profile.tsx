@@ -9,24 +9,19 @@ interface ExperienceProps {
 
 export default function ExperienceProfile({position, date, company, description} : ExperienceProps) {
     return (
-        <section className="experience-section">
-             <div className="experience-content-wrapper">
-                
-                <div className="experience-header-wrapper">
-                    <img src="ui/About-Me/Experience/Work Experience.svg" className="experience-header"></img>
-                </div>
-                <div className="experience-list"></div>
-                <div className="experience-profile">
-                <h2>{position} | {date}</h2>
-                
-                {description.map((item, index) => {return <li key={index}>{item}</li>})}
+        
+        <div className="experience-profile">
+            <h2>{position} | {date}</h2>
 
-                <p className="company">{company}</p>
+            <div className="experience-description-list">
+                {description.map((item, index) => {return <li key={index}>{item}</li>})}
+            </div>       
             
-                </div>
-             </div>
+
+            <p className="company">{company}</p>
             
-        </section>
+        </div>
+             
        
     )
 }
