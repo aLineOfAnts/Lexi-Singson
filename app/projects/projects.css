@@ -31,9 +31,8 @@
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    align-content: center;
-    height: fit-content;
+    
+    min-height: 600px;
     
 }
 

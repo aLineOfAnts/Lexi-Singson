@@ -5,6 +5,7 @@
     background-color: white;
     border-radius: 15;
     pointer-events: none;
+    z-index: 2;
 }
 
 .shown {

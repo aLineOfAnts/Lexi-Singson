@@ -14,7 +14,7 @@ export default function ExperienceProfile({position, date, company, description}
             <h2>{position} | {date}</h2>
 
             <div className="experience-description-list">
-                {description.map((item, index) => {return <li key={index}>{item}</li>})}
+                {description.map((item, index) => {return <ul key={index}>{item}</ul>})}
             </div>       
             
 
