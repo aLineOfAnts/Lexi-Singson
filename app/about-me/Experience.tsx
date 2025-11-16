@@ -7,7 +7,7 @@ const experiences = [
         "position" : "Frontend Systems Programmer",
         "date" : "March 16 - Present",
         "company" : "Onecore Consultancy Inc.",
-        "description" : ["Implemented pages for the HRIS system", "Created the system foundation"]
+        "description" : ["Implemented pages for the HRIS system", "Created the system foundation", "Responsible for the visibility and interactivity of the site."]
     },
 
     { 

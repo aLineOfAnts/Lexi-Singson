@@ -39,7 +39,7 @@ export default function RootLayout({
       >
         
         {children}
-        <NavigationBar />
+        <NavigationBar light={false}  />
         <Footer></Footer>
       </body>
     </html>

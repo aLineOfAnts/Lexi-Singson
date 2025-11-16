@@ -1,12 +1,16 @@
-
 .navigation-bar {
     padding: 20px;
 }
+
 
 .navigation-bar * {
     margin: 20px;
     color: #FBE4B4;
     text-decoration: none;
+}
+
+.navigation-bar-light {
+    color: #69259D;
 }
 
 .container {

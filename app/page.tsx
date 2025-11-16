@@ -5,7 +5,10 @@ import './home.css'
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <>
+      
+      <div className="home-container">
+      
       <div>
         <h1 className="home-logo">Lexi <br></br> Singson</h1>
         <h2>Artist & Programmer</h2>
@@ -15,5 +18,7 @@ export default function Home() {
         <img src="/ui/Group 10.PNG" className="home-background-art"></img>
       </div>
     </div>
+    </>
+    
   );
 }
