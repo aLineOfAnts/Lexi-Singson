@@ -1,0 +1,31 @@
+.experience-profile * {
+    margin: 5 0;
+}
+
+.experience-profile ul {
+    font-size: 18px;
+    list-style-type: disc;
+}
+
+.experience-description-list {
+    padding-left: 20px;
+}
+.experience-profile {
+    display: flex;
+    flex-direction: column;
+    
+    height: 180px;
+    
+}
+
+.experience-profile h2{
+    font-size: 25;
+    font-weight: bold;
+}
+
+.company {
+    font-weight: 600;
+    margin-top: auto;
+    font-size: 20px;
+}
+

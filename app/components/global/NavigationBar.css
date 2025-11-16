@@ -1,0 +1,32 @@
+.navigation-bar {
+    padding: 20px;
+}
+
+
+.navigation-bar * {
+    margin: 20px;
+    color: #FBE4B4;
+    text-decoration: none;
+}
+
+.navigation-bar-light {
+    color: #69259D;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+   
+    
+    align-items: center;
+}
+
+.logo {
+    max-width: 30px;
+    margin: 10px;
+}

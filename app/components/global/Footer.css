@@ -1,0 +1,42 @@
+.footer-container {
+    background-color: #69259D;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.footer-container :nth-child(1) {
+    display: flex;
+}
+
+.footer-container :nth-child(1) h1 {
+    font-size: 60px;
+}
+
+.footer-container :nth-child(1) div{
+    margin: 0px 30px;
+    align-content: center;
+}
+
+.footer-container .line-divider {
+    max-width: 220px;
+    margin: 0px 20px;
+}
+
+.footer-container .logo-art {
+    max-width: 100px;
+}
+.footer-container :nth-child(2) nav {
+    display: flex;
+   
+}
+.footer-container nav * {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: white;
+}
+nav {
+    margin-top: 10px;
+}

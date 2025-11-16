@@ -1,0 +1,17 @@
+.caption {
+    position: fixed;
+    color: #69259D;
+    padding: 10 30px 10px 30px;
+    background-color: white;
+    border-radius: 15;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.shown {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
