@@ -97,7 +97,7 @@ export default function Projects() {
                 </div>
                 <div className="projects-list-page-indicator">
                     <div>
-                            <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="" id="projects-left-arrow" 
+                            <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="hidden" id="projects-left-arrow" 
                         onClick={() => {
                             if (index <= 0) { return; }
                             const newIndex = index - 6
