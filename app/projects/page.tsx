@@ -1,7 +1,7 @@
 'use client'
 import "./projects.css"
 import Project from "../components/projects/project/project"
-import { useState } from "react"
+import { ReactNode, useState } from "react"
 
 
 const projects = [
@@ -53,6 +53,11 @@ const projects = [
         "image" : ""
     }
 ]
+
+interface GalleryProps {
+    list : []
+    listItem : ReactNode
+}
 export default function Projects() {
     const [index, setIndex] = useState(0);
     const [page, setPage] = useState(1);
@@ -91,16 +96,21 @@ export default function Projects() {
                     {projects.slice(index, index+6).map((project, index) => { return <Project title={project.name} description={project.description} image={project.image}></Project>})}
                 </div>
                 <div className="projects-list-page-indicator">
-                    <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="" id="projects-left-arrow" 
-                    onClick={() => {
-                        if (index <= 0) { return; }
-                        const newIndex = index - 6
-                        setIndex(newIndex)
-                        setPage(page - 1)
-                        CheckPage(newIndex)
-                    }}></input>
-                    <p>{page} of {pages}</p>
-                    <input type="image" src="/ui/Projects/ui/Arrow right.svg"  id="projects-right-arrow" onClick={() => {
+                    <div>
+                            <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="" id="projects-left-arrow" 
+                        onClick={() => {
+                            if (index <= 0) { return; }
+                            const newIndex = index - 6
+                            setIndex(newIndex)
+                            setPage(page - 1)
+                            CheckPage(newIndex)
+                        }}></input>
+                    </div>
+                    <div>
+                        <p>{page} of {pages}</p>
+                    </div>
+                    <div>
+                        <input type="image" src="/ui/Projects/ui/Arrow right.svg"  id="projects-right-arrow" onClick={() => {
                         const newIndex = index + 6
                         if (newIndex > projects.length) { return }
                         if (newIndex >= projects.length) { return }
@@ -108,6 +118,10 @@ export default function Projects() {
                          setPage(page + 1)
                         CheckPage(newIndex)
                     }}></input>
+                    </div>
+                    
+                    
+                    
 
                 </div>
             </div>

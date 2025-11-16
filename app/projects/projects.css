@@ -1,7 +1,5 @@
 .navigation-bar * {
-    margin: 20px;
     color: #69259D;
-    text-decoration: none;
 }
 
 .projects-section h1 {
@@ -82,7 +80,6 @@
     color: #69259D;
     text-align: center;
     font-weight: 600;
-    background-color: red;
     align-content: center;
     
 }
@@ -90,7 +87,10 @@
 .projects-list-page-indicator * {
     align-content: center;
     align-self: center;
-    width: fit-content;
+}
+
+.projects-list-page-indicator :nth-child(2) {
+    margin: auto;
 }
 
 #projects-left-arrow {
