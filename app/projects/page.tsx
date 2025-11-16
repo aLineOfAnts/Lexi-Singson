@@ -10,7 +10,7 @@ const projects = [
         "description" : "",
         "image" : ""
     },
-    
+
     {
         "name" : "A Dining Sim",
         "description" : "",
@@ -66,21 +66,20 @@ export default function Projects() {
                 <div className="projects-list-page-indicator">
                     <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="hidden" 
                     onClick={() => {
-                        
+
                         if (index <= 0) { return; }
                         setIndex(index - 6);
                     }}></input>
                     <p>1 of 3</p>
                     <input type="image" src="/ui/Projects/ui/Arrow right.svg" onClick={() => {
-                        if (index + 6 < projects.length) { return }
-                        if (index >= projects.length - 1) { return }
+                        if (index + 6 > projects.length) { return }
+                        if (index >= projects.length) { return }
                         setIndex(index + 6);
                     }}></input>
-                    
+
                 </div>
             </div>
-            
+
         </section>
     )
 }
-
