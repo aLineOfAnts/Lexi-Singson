@@ -54,8 +54,35 @@ const projects = [
     }
 ]
 export default function Projects() {
-    console.log(projects.slice(1, 2))
     const [index, setIndex] = useState(0);
+    const [page, setPage] = useState(1);
+    const pages = Math.round(projects.length / 5)
+
+    const CheckPage = (newIndex : number) => {
+        const leftArrow = document.getElementById("projects-left-arrow")
+            if (leftArrow) {
+            if (newIndex <= 0) {
+                leftArrow.classList.remove("shown");
+                leftArrow.classList.add("hidden");
+            } else {
+                leftArrow.classList.add("shown");
+                leftArrow.classList.remove("hidden");
+            }
+        }
+        
+
+        const rightArrow = document.getElementById("projects-right-arrow")
+        if (!rightArrow) { return }
+        if (newIndex + 6 >= projects.length || newIndex >= projects.length) {
+            rightArrow.classList.remove("shown");
+            rightArrow.classList.add("hidden");
+        } else {
+            rightArrow.classList.remove("hidden");
+            rightArrow.classList.add("shown");
+        }
+            
+        
+    }
     return (
         <section className="projects-section">
             <h1>Projects</h1>
@@ -64,17 +91,22 @@ export default function Projects() {
                     {projects.slice(index, index+6).map((project, index) => { return <Project title={project.name} description={project.description} image={project.image}></Project>})}
                 </div>
                 <div className="projects-list-page-indicator">
-                    <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="hidden" 
+                    <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="" id="projects-left-arrow" 
                     onClick={() => {
-
                         if (index <= 0) { return; }
-                        setIndex(index - 6);
+                        const newIndex = index - 6
+                        setIndex(newIndex)
+                        setPage(page - 1)
+                        CheckPage(newIndex)
                     }}></input>
-                    <p>1 of 3</p>
-                    <input type="image" src="/ui/Projects/ui/Arrow right.svg" onClick={() => {
-                        if (index + 6 > projects.length) { return }
-                        if (index >= projects.length) { return }
-                        setIndex(index + 6);
+                    <p>{page} of {pages}</p>
+                    <input type="image" src="/ui/Projects/ui/Arrow right.svg"  id="projects-right-arrow" onClick={() => {
+                        const newIndex = index + 6
+                        if (newIndex > projects.length) { return }
+                        if (newIndex >= projects.length) { return }
+                        setIndex(newIndex);
+                         setPage(page + 1)
+                        CheckPage(newIndex)
                     }}></input>
 
                 </div>

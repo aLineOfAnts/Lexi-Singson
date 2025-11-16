@@ -32,7 +32,7 @@
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     
-    min-height: 600px;
+    min-height: 630px;
     
 }
 
@@ -74,22 +74,34 @@
 }
 
 .projects-list-page-indicator {
-    display: flex;
-    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 200px;
     height: 80px;
     margin: auto;
     color: #69259D;
     text-align: center;
     font-weight: 600;
-    align-items: center;
+    background-color: red;
+    align-content: center;
+   
     
-    align-items: center;
 }
 
 .projects-list-page-indicator * {
     align-content: center;
     align-self: center;
-    margin: 0px 20px;
     width: fit-content;
 }
 
+#projects-left-arrow {
+    float: left;
+}
+
+#projects-right-arrow {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
