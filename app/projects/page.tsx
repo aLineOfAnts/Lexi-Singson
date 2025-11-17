@@ -1,5 +1,5 @@
 'use client'
-import "./projects.css"
+import "../gallery.css"
 import Project from "../components/projects/project/project"
 import { ReactNode, useState } from "react"
 import Gallery from "../components/gallery"
@@ -55,10 +55,7 @@ const projects = [
     }
 ]
 
-interface GalleryProps {
-    list : []
-    listItem : ReactNode
-}
+
 export default function Projects() {
     return (
         <section className="gallery-section">

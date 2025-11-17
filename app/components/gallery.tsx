@@ -1,7 +1,8 @@
 'use client'
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import { useState } from "react";
 import Project from "./projects/project/project";
+import Artwork from "./artworks/artwork";
 
 
 
@@ -47,11 +48,14 @@ export default function Gallery({list, galleryType} : GalleryProps) {
             return <>{list.slice(index, index+6).map((item, index) => { return <Project key={index} title={item.name} description={item.description} image={item.image}></Project>})}</>
             
         } else if (galleryType == "artworks") {
-            return <></>
+            return <>{list.slice(index, index+6).map((item, index) => { return <Artwork key={index} title={item.name} image={item.artwork}></Artwork>})}</>
         }
         return <></>
     }
-        
+
+    useEffect(() => {
+        CheckPage(index);
+    }, []);
     
     return (
             <div className="gallery-content-wrapper">
