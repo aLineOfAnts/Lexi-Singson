@@ -61,7 +61,7 @@ interface GalleryProps {
 }
 export default function Projects() {
     return (
-        <section className="projects-section">
+        <section className="gallery-section">
             <h1>Projects</h1>
             <Gallery list={projects} galleryType="projects"></Gallery>
         </section>

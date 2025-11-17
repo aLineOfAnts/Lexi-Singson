@@ -2,20 +2,20 @@
     color: #69259D;
 }
 
-.projects-section h1 {
+.gallery-section h1 {
     margin-top: 10%;
     margin-bottom: 50px;
     color: #69259D;
     text-align: center;
 }
 
-.projects-section {
+.gallery-section {
     min-height: 100vh;
     height: auto;
     align-content: center;
 }
 
-.projects-content-wrapper {
+.gallery-content-wrapper {
     width: 80%;
     margin: 0px auto 100px;
     display: flex;
@@ -23,7 +23,7 @@
     flex-direction: column;
 }
 
-.projects-list {
+.gallery-list {
     width: fit-content;
     margin: auto;
     display: grid;
@@ -34,7 +34,7 @@
     
 }
 
-.project {
+.gallery-item {
     width: 300px;
     height: 300px;
     border-radius: 20px;
@@ -42,13 +42,13 @@
     overflow: hidden;
 }
 
-.project-cover {
+.gallery-item-cover {
     height: 60%;
     width: inherit;
    
 }
 
-.project-description-container {
+.gallery-item-description-container {
     height: 40%;
     width: inherit;
     background-color: white;
@@ -57,21 +57,21 @@
 }
 
 
-.project-description-container * {
+.gallery-item-description-container * {
     text-align: center;
     width: 90%;
     margin: auto;
 }
-.project-description-container p {
+.gallery-item-description-container p {
     font-size: 16px;
     
 }
 
-.project-description-container h1 {
+.gallery-item-description-container h1 {
     font-size: 23px;
 }
 
-.projects-list-page-indicator {
+.gallery-list-page-indicator {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 200px;
@@ -84,20 +84,20 @@
     
 }
 
-.projects-list-page-indicator * {
+.gallery-list-page-indicator * {
     align-content: center;
     align-self: center;
 }
 
-.projects-list-page-indicator :nth-child(2) {
+.gallery-list-page-indicator :nth-child(2) {
     margin: auto;
 }
 
-#projects-left-arrow {
+#gallery-left-arrow {
     float: left;
 }
 
-#projects-right-arrow {
+#gallery-right-arrow {
     float: right;
 }
 

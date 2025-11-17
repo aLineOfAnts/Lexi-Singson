@@ -16,7 +16,7 @@ export default function Gallery({list, galleryType} : GalleryProps) {
     
 
     const CheckPage = (newIndex : number) => {
-        const leftArrow = document.getElementById("projects-left-arrow")
+        const leftArrow = document.getElementById("gallery-left-arrow")
             if (leftArrow) {
             if (newIndex <= 0) {
                 leftArrow.classList.remove("shown");
@@ -28,7 +28,7 @@ export default function Gallery({list, galleryType} : GalleryProps) {
         }
         
 
-        const rightArrow = document.getElementById("projects-right-arrow")
+        const rightArrow = document.getElementById("gallery-right-arrow")
         if (!rightArrow) { return }
         if (newIndex + 6 >= list.length || newIndex >= list.length) {
             rightArrow.classList.remove("shown");
@@ -54,14 +54,14 @@ export default function Gallery({list, galleryType} : GalleryProps) {
         
     
     return (
-            <div className="projects-content-wrapper">
-                <div className="projects-list">
+            <div className="gallery-content-wrapper">
+                <div className="gallery-list">
                     {DisplayGallery()}
                     
                 </div>
-                <div className="projects-list-page-indicator">
+                <div className="gallery-list-page-indicator">
                     <div>
-                            <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="hidden" id="projects-left-arrow" 
+                            <input type="image" src="/ui/Projects/ui/Arrow left.svg" className="hidden" id="gallery-left-arrow" 
                         onClick={() => {
                             if (index <= 0) { return; }
                             const newIndex = index - 6
@@ -74,7 +74,7 @@ export default function Gallery({list, galleryType} : GalleryProps) {
                         <p>{page} of {pages}</p>
                     </div>
                     <div>
-                        <input type="image" src="/ui/Projects/ui/Arrow right.svg"  id="projects-right-arrow" onClick={() => {
+                        <input type="image" src="/ui/Projects/ui/Arrow right.svg"  id="gallery-right-arrow" onClick={() => {
                         const newIndex = index + 6
                         if (newIndex > list.length) { return }
                         if (newIndex >= list.length) { return }

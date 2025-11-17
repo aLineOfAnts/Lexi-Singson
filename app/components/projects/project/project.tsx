@@ -6,9 +6,9 @@ interface ProjectProps {
 export default function Project({title, description, image} : ProjectProps) {
     return (
         <>
-            <div className="project">
-                <img className="project-cover" src={image}></img>
-                <div className="project-description-container">
+            <div className="gallery-item">
+                <img className="gallery-item-cover" src={image}></img>
+                <div className="gallery-item-description-container">
                     <h3>{title}</h3>
                     <p>{description}</p>
                 </div>
