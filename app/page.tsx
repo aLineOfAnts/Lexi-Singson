@@ -18,6 +18,7 @@ export default function Home() {
         <img src="/ui/Group 10.PNG" className="home-background-art"></img>
       </div>
     </div>
+    <NavigationBar light={false}  />
     </>
     
   );

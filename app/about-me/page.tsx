@@ -11,6 +11,7 @@ export default function AboutMe() {
             <Languages/>
             <Tools></Tools>
             <Experience/>
+            <NavigationBar light={false}></NavigationBar>
         </>
     )
 }

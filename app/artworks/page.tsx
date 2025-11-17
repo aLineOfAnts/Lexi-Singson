@@ -3,6 +3,7 @@ import "../gallery.css"
 import Project from "../components/projects/project/project"
 import { ReactNode, useState } from "react"
 import Gallery from "../components/gallery"
+import NavigationBar from "../components/global/NavigationBar"
 
 
 const artworks = [
@@ -30,9 +31,13 @@ const artworks = [
 
 export default function Projects() {
     return (
-        <section className="gallery-section">
-            <h1>Artworks</h1>
-            <Gallery list={artworks} galleryType="artworks"></Gallery>
-        </section>
+        <>
+            <section className="gallery-section">
+                <h1>Artworks</h1>
+                <Gallery list={artworks} galleryType="artworks"></Gallery>
+            </section>
+            <NavigationBar light={true}></NavigationBar>
+        </>
+        
     )
 }
