@@ -8,7 +8,7 @@ import { useEffect, useState } from "react"
 interface navigationProps {
     light? : boolean
 }
-export default function NavigationBar(light : navigationProps) {
+export default function NavigationBar({light} : navigationProps) {
     
     const Style = () => {
         if (light) {
