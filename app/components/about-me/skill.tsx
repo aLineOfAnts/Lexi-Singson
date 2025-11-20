@@ -3,10 +3,10 @@ import { MouseEvent } from "react"
 import "./caption.css"
 interface SkillProps {
     name : string,
-    url : string
+    skillUrl : string | undefined
     light : boolean
 }
-export default function Skill({name, url, light} : SkillProps) {
+export default function Skill({name, skillUrl, light} : SkillProps) {
     
 
     const ShowCaption = (event : MouseEvent) => {
@@ -40,7 +40,7 @@ export default function Skill({name, url, light} : SkillProps) {
             return (
         <>
             <div className="skills-list-slot skills-slot-light">
-                <img src={url} className="skill" 
+                <img src={skillUrl} className="skill" 
                 onMouseEnter={(event) => {
                     ShowCaption(event);
                 }}
@@ -62,7 +62,7 @@ export default function Skill({name, url, light} : SkillProps) {
         return (
         <>
             <div className="skills-list-slot skills-slot-dark">
-                <img src={url} className="skill" 
+                <img src={skillUrl} className="skill" 
                 onMouseEnter={(event) => {
                     ShowCaption(event);
                 }}

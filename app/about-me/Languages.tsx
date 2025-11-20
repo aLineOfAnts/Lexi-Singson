@@ -2,16 +2,16 @@ import "./about-me.css"
 import Skill from "../components/about-me/skill"
 const languages = [
 
-    {"name" : "C++", "url" : "ui/About-Me/Languages/c+.png"},
-    {"name" : "C++", "url" : ""},
-    {"name" : "C++", "url" : ""},
-    {"name" : "C++", "url" : ""},
-    {"name" : "C++", "url" : ""},
-    {"name" : "C++", "url" : ""},
-    {"name" : "C++", "url" : ""},
-    {"name" : "C++", "url" : ""},
-    {"name" : "C++", "url" : ""},
-    {"name" : "C++", "url" : ""}
+    {"name" : "C++", "url" : "ui/About-Me/Languages/C++.png"},
+    {"name" : "C++", "url" : undefined},
+    {"name" : "C++", "url" : undefined},
+    {"name" : "C++", "url" : undefined},
+    {"name" : "C++", "url" : undefined},
+    {"name" : "C++", "url" : undefined},
+    {"name" : "C++", "url" : undefined},
+    {"name" : "C++", "url" : undefined},
+    {"name" : "C++", "url" : undefined},
+    {"name" : "C++", "url" : undefined}
 ]
 
 /*
@@ -28,7 +28,7 @@ export default function Languages() {
                 </div>
                 <div className="skills-list-wrapper2">
                     <div className="skills-list">
-                        {languages.map((skill, index) => { return <Skill name={skill.name} url={skill.url} key={index} light={false}></Skill>} )}
+                        {languages.map((skill, index) => { return <Skill name={skill.name} skillUrl={skill.url} key={index} light={false}></Skill>} )}
                     </div>
                     <div className="skills-list-page-label">
                         <p>1 of 2</p>
