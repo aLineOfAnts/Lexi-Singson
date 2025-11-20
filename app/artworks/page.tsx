@@ -9,22 +9,22 @@ import NavigationBar from "../components/global/NavigationBar"
 const artworks = [
     {
         "name" : "",
-        "artwork" : ""
+        "artwork" : "" //Webfishing
     },
 
     {
         "name" : "",
-        "artwork" : ""
+        "artwork" : "" //Dragon
     },
 
     {
         "name" : "",
-        "artwork" : ""
+        "artwork" : "" //Laios
     },
 
     {
         "name" : "",
-        "artwork" : ""
+        "artwork" : "" //Commission
     }
 ]
 
