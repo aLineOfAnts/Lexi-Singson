@@ -1,6 +1,6 @@
 interface ArtworkProps {
     title : string, 
-    image : string
+    image : string | undefined
 }
 export default function Artwork({title, image} : ArtworkProps) {
     return (
