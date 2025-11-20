@@ -2,16 +2,16 @@
 import Skill from "../components/about-me/skill"
 const languages = [
 
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined},
-    {"name" : "C++", "url" : undefined}
+    {"name" : "Visual Studio Code", "url" : "ui/About-Me/Tools/Visual Studio Code.png"},
+    {"name" : "Visual Studio", "url" : "ui/About-Me/Tools/Visual Studio.png"},
+    {"name" : "Unity", "url" : "ui/About-Me/Tools/Unity.png"},
+    {"name" : "Game Maker Studio 2", "url" : "ui/About-Me/Tools/Gamemaker.png"},
+    {"name" : "Godot", "url" : "ui/About-Me/Tools/Godot.png"},
+    {"name" : "XCode", "url" : "ui/About-Me/Tools/XCode.png"},
+    {"name" : "Procreate", "url" : "ui/About-Me/Tools/Procreate.png"},
+    {"name" : "Figma", "url" : "ui/About-Me/Tools/Figma.png"},
+    {"name" : "", "url" : undefined},
+    {"name" : "", "url" : undefined}
 ]
 
 

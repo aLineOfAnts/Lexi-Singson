@@ -1,4 +1,4 @@
-import "./about-me.css"
+
 
 export default function Profile() {
     return (

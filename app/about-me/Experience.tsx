@@ -1,4 +1,4 @@
-import "./about-me.css"
+
 import Skill from "../components/about-me/skill"
 import ExperienceProfile from "../components/about-me/work-experience/experience-profile";
 

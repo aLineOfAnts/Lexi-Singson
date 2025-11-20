@@ -1,9 +1,8 @@
 'use client'
 import Link from "next/link"
-import "./NavigationBar.css"
 import "tailwindcss"
 import { useEffect, useState } from "react"
-
+import "./NavigationBar.css"
 
 interface navigationProps {
     light? : boolean
@@ -19,7 +18,19 @@ export default function NavigationBar({light} : navigationProps) {
             return "navigation-bar";
             
         }
+        
     }
+
+    useEffect(() => {
+        
+        if (document.location.pathname == "/") {
+            const nav = document.getElementById("navigation-bar");
+            if (!nav) { return }
+            nav.style.color = "#FBE4B4"
+            console.log("shoot");
+        }
+    }, []);
+    
 
     return <div className="container">
         <Link href="/"><img src="ui/logo-art.PNG" className="logo"></img></Link>
