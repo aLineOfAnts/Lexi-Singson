@@ -60,6 +60,10 @@
     align-items: center;
 }
 
+.about-me-profile-greeting-label-mobile {
+    display: none;
+}
+
 .about-me-profile-greeting-label {
     width: 80px;
     margin-right: 10px;
@@ -259,11 +263,12 @@ button {
     .about-me-profile-wrapper {
         width: 90%;
         height: 70%;
-        background-color: red;
+        background-color: red 0.5;
         display: flex;
         flex-direction: column;
-        row-gap: 50px;
+        row-gap: 40px;
         justify-content: start;
+        align-items: start;
     }
 
     .about-me-profile .background-desktop {
@@ -275,14 +280,24 @@ button {
         top: 0;
     }
 
+    .info {
+        width: 90%;
+        margin: auto;
+    }
+    .about-me-profile-greeting-label-mobile {
+        display: block;
+        margin-bottom: 20px;
+    }
+
     
     .about-me-profile-wrapper * {
-        font-size: 16px;
+        font-size: 15px;
     }
     .portrait, .label {
         width: 60%;
         display: block;
         margin: auto;
+        margin-top: 30px;
     }
 
     .about-me-profile .label {
@@ -298,6 +313,15 @@ button {
 
     .about-me-profile-greeting-label {
         display: none;
+    }
+
+    .about-me-profile .ui-decor-two {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        left: 50%;
+        right: 50%;
     }
 
 

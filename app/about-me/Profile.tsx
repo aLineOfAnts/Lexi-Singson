@@ -11,7 +11,9 @@ export default function Profile() {
                     <img src="ui/About-Me/Portrait.png" className="portrait"></img>
                 </div>
 
+                
                 <div className="info">
+                    <img src="ui/About-Me/Greeting.Svg" className="about-me-profile-greeting-label-mobile"></img>
                     <div className="about-me-profile-greeting">
                          <img src="ui/About-Me/Greeting.Svg" className="about-me-profile-greeting-label"></img>
                         <p>My name is Lexi, I’m an upcoming Computer</p> 
