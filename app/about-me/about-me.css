@@ -320,8 +320,13 @@ button {
         display: flex;
         justify-content: center;
         width: 150px;
-        left: 50%;
+        left: 30%;
         right: 50%;
+    }
+
+
+    .about-me-profile .ui-decor-one {
+        width: 118%;
     }
 
 
