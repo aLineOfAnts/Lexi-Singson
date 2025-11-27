@@ -335,13 +335,11 @@ button {
         position: relative;
         height: 90%;
         width: 90%;
-        background-color: red;
         margin: auto;
     }
 
     .skills-list-wrapper {
         align-content: center;
-        background-color: red;
         height: inherit;
     
     }
@@ -350,14 +348,11 @@ button {
         height: 90%;
         width: 90%;
         margin: auto;
-        align-self: center;
-        background-color: red;
 
     }
 
     .skills-list {
         height: 340px;
-        width: 65%;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -371,12 +366,21 @@ button {
         gap: 8px;
     }
 
+    .skills-list-wrapper2 {
+        height: 80%;
+        
+        align-content: center;
+    }
+    
+
     .skills-label {
         width: 80%;
         margin: auto;
     }
     .skills-label-wrapper {
-        background-color: green;
+        height: 20%;
+        display: flex;
+        justify-content: center;
     }
 
 }
