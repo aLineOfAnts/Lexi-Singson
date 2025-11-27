@@ -1,6 +1,6 @@
 
 import Skill from "../components/about-me/skill"
-const languages = [
+const tools = [
 
     {"name" : "Visual Studio Code", "url" : "ui/About-Me/Tools/Visual Studio Code.png"},
     {"name" : "Visual Studio", "url" : "ui/About-Me/Tools/Visual Studio.png"},
@@ -24,7 +24,7 @@ export default function Tools() {
                 </div>
                 <div className="skills-list-wrapper2">
                     <div className="skills-list">
-                        {languages.map((skill, index) => { return <Skill name={skill.name} skillUrl={skill.url} key={index} light={true}></Skill>} )}
+                        {tools.map((skill, index) => { return <Skill name={skill.name} skillUrl={skill.url} key={index} light={true}></Skill>} )}
                     </div>
                     <div className="skills-list-page-label hidden">
                         <p>1 of 2</p>

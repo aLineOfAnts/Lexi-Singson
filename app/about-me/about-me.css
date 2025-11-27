@@ -24,6 +24,8 @@
 
 .background-mobile {
     display: none;
+    width: 100%;
+    object-fit: fill;
 }
 
 .about-me-profile .portrait, .label {
@@ -175,9 +177,6 @@
 .skill:hover {
     cursor: none;
 }
-.skills-label {
-    
-}
 
 .skills-list-page-label {
     float: right;
@@ -260,6 +259,7 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+    /* Profile */
     .about-me-profile-wrapper {
         width: 90%;
         height: 70%;
@@ -329,5 +329,54 @@ button {
         width: 118%;
     }
 
+    /* Languages */
+    
+    .skills-wrapper {
+        position: relative;
+        height: 90%;
+        width: 90%;
+        background-color: red;
+        margin: auto;
+    }
+
+    .skills-list-wrapper {
+        align-content: center;
+        background-color: red;
+        height: inherit;
+    
+    }
+
+    .skills-content-wrapper {
+        height: 90%;
+        width: 90%;
+        margin: auto;
+        align-self: center;
+        background-color: red;
+
+    }
+
+    .skills-list {
+        height: 340px;
+        width: 65%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-self: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        max-width: 1100px;
+        gap: 8px;
+    }
+
+    .skills-label {
+        width: 80%;
+        margin: auto;
+    }
+    .skills-label-wrapper {
+        background-color: green;
+    }
 
 }
