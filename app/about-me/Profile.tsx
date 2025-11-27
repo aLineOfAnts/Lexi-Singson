@@ -3,7 +3,8 @@
 export default function Profile() {
     return (
         <section className="about-me-profile">
-            <img src="/ui/About-Me/Profile Background.png" className="background"></img>
+            <img src="/ui/About-Me/Profile Background.png" className="background-desktop"></img>
+            <img src="/ui/About-Me/phone-background.png" className="background-mobile"></img>
             <div className="about-me-profile-wrapper">
                 <div>
                     <img src="ui/About-Me/AboutMeCurve.png" className="label"></img>

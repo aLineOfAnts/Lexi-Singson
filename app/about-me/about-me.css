@@ -3,17 +3,27 @@
     color: #FBE4B4;
 }
 
+
+
+
 .about-me-profile {
     align-content: center;
     color: #69259D;
 }
 
-.about-me-profile .background {
+.about-me-profile .background-desktop, .background-mobile {
     position: absolute;
     z-index: -3;
     left: 0;
-    top: -70;
     width: 100%;
+}
+
+.about-me-profile .background-desktop {
+    top: -70;
+}
+
+.background-mobile {
+    display: none;
 }
 
 .about-me-profile .portrait, .label {
@@ -39,6 +49,7 @@
     
 }
 
+
 .about-me-profile-wrapper > div {
     position: relative;
 }
@@ -47,7 +58,6 @@
 .about-me-profile-greeting {
     display: flex;
     align-items: center;
-    
 }
 
 .about-me-profile-greeting-label {
@@ -55,6 +65,7 @@
     margin-right: 10px;
     margin-top: -10px;
     float: left;
+    display: block;
 }
 
 .about-me-profile .info {
@@ -242,4 +253,52 @@ button {
 .experience-list {
     width: 85%;
     margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-profile-wrapper {
+        width: 90%;
+        height: 70%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        justify-content: start;
+    }
+
+    .about-me-profile .background-desktop {
+        display: none;
+    }
+
+    .background-mobile {
+        display: block;
+        top: 0;
+    }
+
+    
+    .about-me-profile-wrapper * {
+        font-size: 16px;
+    }
+    .portrait, .label {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .about-me-profile .label {
+        position: absolute;
+        top: -60px;
+        left: 60px;
+    }
+
+    .about-me-profile .info {
+        padding: 0;
+        text-align: justify;
+    }
+
+    .about-me-profile-greeting-label {
+        display: none;
+    }
+
+
 }
