@@ -258,6 +258,7 @@ button {
     margin: auto;
 }
 
+
 @media only screen and (max-width: 600px) {
     /* Profile */
     .about-me-profile-wrapper {
